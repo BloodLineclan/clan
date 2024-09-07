@@ -1,47 +1,16 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>BloodLine</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>TikTurn</title>
 </head>
 <body>
-  <div class="container">
-    <img class="header-image" src="BloodLine.png" alt="Заголовок">
-
-    <div class="buttons">
-      <a href="https://vk.com/peredatimnevse" class="button">Вступить в клан</a>
-      <button onclick="toggleForm()" class="button">Подать заявку на союз</button>
-    </div>
-
-    <div id="form-container" class="form-container">
-      <form action="submit.php" method="post">
-        <label for="clan">Ваш клан:</label>
-        <input type="text" name="clan" id="clan" required>
-
-        <label for="clan-leader">Ссылка на главу клана:</label>
-        <input type="text" name="clan-leader" id="clan-leader" required>
-
-        <label for="alliance">Выберите тип союза:</label>
-        <input type="radio" name="alliance" value="Нейтралитет" required> Нейтралитет
-        <input type="radio" name="alliance" value="Союз" required> Союз
-        <br>
-        <input type="submit" value="Отправить">
-      </form>
-    </div>
-  </div>
-
-  <script src="script.js"></script>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-  <script>
+    <div class="container"></div>
+    <script src="script.js"></script>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
     
-    $(document).ready(function() {
-      $('.form-container form').submit(function(event) {
-        event.preventDefault();
-        $('.form-container').hide(); 
-      });
-    });
-  </script>
 </body>
 </html>
